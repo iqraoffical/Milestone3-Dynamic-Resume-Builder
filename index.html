@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Dynamic Resume Builder</h1>
+    </header>
+
+    <form id="resume-form">
+      <fieldset>
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="Name" placeholder="Enter your name" required />
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="contact no"
+          id="phone"
+          placeholder="Enter your Phone number"
+          required
+        />
+
+        <label for="Website">Website:</label>
+        <a
+          ><input
+            type="Websitelink"
+            id="website"
+            placeholder="Enter Your Website link if any"
+            href=""
+        /></a>
+      </fieldset>
+
+      <fieldset>
+        <label for="picture" class="inputname" id="upload"
+          ><strong>Upload Picture:</strong></label
+        >
+        <input
+          type="file"
+          name="picture"
+          id="picture"
+          class="forpic"
+          accept="image"
+          required
+        /><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <h2>Education</h2>
+        <!-- <label for ="education">Education:</label> -->
+        <li>
+          <input
+            type="text"
+            id="education1"
+            placeholder="Enter Your Education"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="education2"
+            placeholder="Enter Your Education"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="education3"
+            placeholder="Enter Your Education"
+            rows="4"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="education4"
+            placeholder="Enter more education if needed"
+            rows="4"
+          />
+        </li>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <h2>Work Experience</h2>
+        <!-- <label for ="Work Experience">Work Experience:</label> -->
+        <li>
+          <input
+            type="text"
+            id="Experience1"
+            placeholder="Enter Your Experience"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="Experience2"
+            placeholder="Enter Your  Experience"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="Experience3"
+            placeholder="Add additional experience"
+            required
+          />
+        </li>
+        <br />
+        <li>
+          <input
+            type="text"
+            id="Experience4"
+            placeholder="Enter more experience if needed"
+            row="4"
+          />
+        </li>
+        <br />
+      </fieldset>
+      <fieldset>
+        <!-- <label for ="skills">Skills:</label> -->
+        <h2>Skills</h2>
+        <ul id="skills-list">
+          <li>
+            <input
+              type="text"
+              id="skill1"
+              placeholder="Enter Your Skill"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <input
+              type="text"
+              id="skill2"
+              placeholder="Add additional skill"
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <input
+              type="text"
+              id="skill3"
+              placeholder="Enter another skill "
+              required
+            />
+          </li>
+          <br />
+          <li>
+            <input
+              type="text"
+              id="skill4"
+              placeholder="Add more skills if needed "
+              hold
+            />
+          </li>
+          <br />
+        </ul>
+      </fieldset>
+      <br />
+      <br />
+      <button id="generate Resume" type="submit">
+        <br />
+        <b>Generate Resume</b>
+      </button>
+    </form>
+    <br />
+
+    <div id="resume-display" contenteditable="true">
+      <!--Resume will be generated below-->
+    </div>
+    <!-- <button id="updateResune" type="button">Update Resume</button>
+        <button id="download Resume">Download Updated Resume</button>
+      -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

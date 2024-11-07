@@ -1,0 +1,155 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #0b0a0a;
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: rgb(44, 152, 218);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+  fieldset h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #0e0909;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  input[type="contact no"],
+  input[type="Websitelink"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input[type="file"] {
+    border: none;
+  }
+  
+  input:focus {
+    outline: 2px solid #4caf50;
+  }
+  
+  button {
+    background-color: #010c01;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #14d1d7;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  
+  /* Editable Resume Display */
+  #resume-display {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: rgb(70, 145, 220);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  #resume-display h2,
+  #resume-display h3 {
+   
+    margin-bottom: 10px;
+  }
+  
+  #resume-display p,
+  #resume-display ul {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #resume-display ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Section for Action Buttons */
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  section button {
+    flex: 1;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    form, #resume-display {
+      padding: 15px;
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+    section button {
+    text-align: center;
+      padding: 10px;
+      margin:20px
+    }
+  }
+  
